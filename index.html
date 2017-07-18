@@ -19,6 +19,16 @@
             height: 100%;
             touch-action: none;
         }
+        
+        #changeCamera {
+          background-color: red;
+          height: 50px;
+          position: absolute;
+          right: 10px;
+          bottom: 10px;
+          width: 50px;
+        }
+        
     </style>
 
     <script src="./js/vendor/babylon.js"></script>
@@ -29,9 +39,12 @@
 </head>
 
 <body>
-    <canvas id="renderCanvas"></canvas>       
+    <canvas id="renderCanvas"></canvas>
+    
+    <div id="changeCamera"></div>
 
     <script src="./js/main.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
