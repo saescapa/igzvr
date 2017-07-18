@@ -1,0 +1,70 @@
+<!-- By Ada Rose Edwards @lady_ada_king. -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vaporwave - A-Frame</title>
+    <meta name="description" content="Vaporwave aesthetic text By Ada Rose Edwards (@lady_ada_king).">
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-text-geometry-component@0.5.1/dist/aframe-text-geometry-component.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-camera>
+        <a-cursor></a-cursor>
+        <!-- Or <a-entity cursor></a-entity> -->
+      </a-camera>
+      
+      <a-assets>
+        <img id="diana" src="https://pbs.twimg.com/profile_images/661555137924612096/o8AqVwHg.png">
+        <img id="sky" src="https://img.gs/bbdkhfbzkk/2048x2048,stretch/http://i.imgur.com/WqlqEkq.jpg" crossorigin="anonymous" />
+      </a-assets>
+      
+	    <a-sky src="#sky" rotation="0 -90 0"></a-sky>
+	    
+	    <a-sphere position="0 1.5 0" radius="0.1" color="yellow"></a-sphere>
+      
+      <a-entity position="0 2 -5" rotation="90 0 0">
+        <a-cylinder radius="0.5" height="0" color="#FFC65D" material="src: #diana;" cursor-listener></a-cylinder>
+        <a-cylinder position="0 -0.16 0" radius="0.5" height="0.3" color="#FFC65D"></a-cylinder>
+      </a-entity>
+      
+      <a-entity position="-5 2 -5" rotation="90 45 0">
+        <a-cylinder radius="0.5" height="0" color="#white" material="src: #diana;" cursor-listener></a-cylinder>
+        <a-cylinder position="0 -0.16 0" radius="0.5" height="0.3" color="white"></a-cylinder>
+      </a-entity>
+      
+      <a-entity position="-5 2 0" rotation="90 90 0">
+        <a-cylinder radius="0.5" height="0" color="blue" material="src: #diana;" cursor-listener></a-cylinder>
+        <a-cylinder position="0 -0.16 0" radius="0.5" height="0.3" color="blue"></a-cylinder>
+      </a-entity>
+      
+      <a-entity position="-5 2 5" rotation="90 135 0">
+        <a-cylinder radius="0.5" height="0" color="#white" material="src: #diana;" cursor-listener></a-cylinder>
+        <a-cylinder position="0 -0.16 0" radius="0.5" height="0.3" color="white"></a-cylinder>
+      </a-entity>
+      
+      <a-entity position="0 2 5" rotation="90 180 0">
+        <a-cylinder radius="0.5" height="0" color="red" material="src: #diana;" cursor-listener></a-cylinder>
+        <a-cylinder position="0 -0.16 0" radius="0.5" height="0.3" color="red"></a-cylinder>
+      </a-entity>
+      
+      <a-entity position="5 2 5" rotation="90 225 0">
+        <a-cylinder radius="0.5" height="0" color="#white" material="src: #diana;" cursor-listener></a-cylinder>
+        <a-cylinder position="0 -0.16 0" radius="0.5" height="0.3" color="white"></a-cylinder>
+      </a-entity>
+      
+      <a-entity position="5 2 0" rotation="90 270 0">
+        <a-cylinder radius="0.5" height="0" color="green" material="src: #diana;" cursor-listener></a-cylinder>
+        <a-cylinder position="0 -0.16 0" radius="0.5" height="0.3" color="green"></a-cylinder>
+      </a-entity>
+      
+      <a-entity position="5 2 -5" rotation="90 315 0">
+        <a-cylinder radius="0.5" height="0" color="#white" material="src: #diana;" cursor-listener></a-cylinder>
+        <a-cylinder position="0 -0.16 0" radius="0.5" height="0.3" color="white"></a-cylinder>
+      </a-entity>
+      
+    </a-scene>
+  </body>
+</html>
